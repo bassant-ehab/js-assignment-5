@@ -1,0 +1,117 @@
+#GoHomePage{
+    text-decoration: underline;
+    cursor: pointer;
+   }
+   i{
+    margin-top: 10px;
+    padding: 5px;
+   }
+  
+
+
+/*******contact infooo*******/
+.info{
+    background-color: #262936;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   }
+  
+  .map{
+    background-color:#262936;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .addr{
+    font-size: 15px;
+    font-style: normal;
+    text-align: start;
+    padding: 10px;
+  }
+  
+  .info .icons_cont{
+    color: #009ad8;
+  }
+  
+  .Form_contact input:not([type="submit"]), .Form_contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    border-radius: 30px;
+    background: transparent;
+    
+  }
+  .Form_contact textarea{
+    height: 100px;
+  }
+  .Form_contact .submit{
+    text-align: right;
+    
+  }
+  .sub-btn{
+    border: none;
+      background: #009ad8;
+      padding: 10px 20px;
+      border-radius: 30px;
+      color: white;
+  }
+  
+  
+  /*******fooooter******/
+  #footer{
+    background-color: #2d3041;
+    
+    padding: 50px 0;
+    
+  }
+  .Subscribe{
+    border:2px solid transparent;
+    border-radius: 30px;
+  }
+  .social_icons{
+    margin-top: 40px;
+  }
+  .social_icn{
+    background-color: #1E202C;
+    color: #009ad8;
+    border: 30% 30% 1px solid ;
+    border-radius:50% 50%;
+    padding: 8px; 
+    cursor: pointer; 
+    transition: all 0.5s ease;
+  }
+  .social_icn:hover{
+    background-color: #009ad8;
+    color: white;
+  }
+  .subscribe_box {
+    position: relative;
+    /*margin-top: 90px;*/
+  }
+  .subscribe_box input[type="submit"] {
+    position: absolute;
+    right: 20px;
+    top: 32px;
+    /*bottom: 5px;*/
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+  }
+  #footer .container{
+  
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+  }
+  .subscribe_caption{
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+  }

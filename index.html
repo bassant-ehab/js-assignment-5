@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+   
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    </head>
+
+    <body class="bg-secondary">
+        <!-- Header -->
+        
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container p-3 ">
+                  <a class="navbar-brand" href="#">
+                    <img src="./css/img/logo (1).png" alt="logo" width="40" height="24" class="d-inline-block align-text-top">     Weather
+                    <br>
+                    <span class="small">tagline goes here</span>
+                </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Live Cameras </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+                      </li>
+                      
+                      
+                      
+                    </ul>
+                    
+                  </div>
+                </div>
+            </nav>
+
+
+        <!--forecasting-->
+            <div class="app-container">
+            <div class="container px-3 py-5 text-center ">
+            <!--Search Input-->
+            <form class="find-location">
+                <input type="text" class="w-100 mx-auto rounded-5 py-3 mx-4 mb-5 bg-dark text-white" placeholder="Find your location ...." id="search" >
+                <input type="button" value="Find" id="submit">
+            </form>
+                
+                <div class="row">
+
+
+                   <div class="forcasting d-flex" id="forcast">
+                    <!--Today Section-->
+                    <div class="card  text-bg-secondary col-md-4 col-sm-12">
+                        <div class="card-header  d-flex justify-content-between ">
+                           <p id="week_day">Wednesday</p>
+                           <span>
+                            <span id="today_date_month">19 Aug</span>
+                           </span>
+                          </div>
+                        <div class="card-body text-start">
+
+                          <div class="info-weather">
+                            <h6 class="card-title" id="today_location">Cairo</h6>
+                            <div class="weather-info d-flex justify-content-between align-content-center">
+                              <h1 id="today_temp">35 <sup>o</sup>c</h1><span class="weathericon"><img id="todayicon" src="./css/img/116.png"></span>
+                            </div>
+                            <p class="fs-6 text-primary-emphasis" id="condition_text">partly cloudy</p>
+                            <div class="footer-imgs">
+                              <img id="humidity" src="./css/img/icon-umberella.png" alt="umbrella">20%
+                              <img id="wind" src="./css/img/icon-wind.png" alt="wind">18Km/h
+                              <img id="wind_direction" src="./css/img/icon-compass.png" alt="compass">East
+                            </div>
+                          </div>
+                           
+                          
+                        </div>
+                    </div>
+
+
+                    <!--tomorrow-->
+                    <div class="card text-bg-dark col-md-4 col-sm-12" >
+                        <div class="card-header ">
+                          <small id="tomorrow">Sunday</small>
+
+                        </div>
+                        <div class="card-body text-start text-center">
+                            <img class="pb-3" id="tomorrow_icon" src="./css/img/113.png" alt="sunny">
+                            <h5 class="card-title" id="tom_max_temp">35.7 <sup>o</sup>c</h5>
+                            <p class="card-title" id="tom_min_temp">32.2 <sup>o</sup>c</p>
+                            <p class="fs-6 text-primary-emphasis" id="tom_text">sunny</p>
+                          
+                        </div>
+                    </div>
+
+
+                    <!--after tomorrow-->
+                    <div class="card text-bg-secondary col-md-4 col-sm-12" >
+                      <div class="card-header ">
+                        <small id="after_tomorrow">Monday</small>
+
+                      </div>
+                      <div class="card-body text-start text-center">
+                          <img class="pb-3" id="after_tomorrow_ico" src="./css/img/113.png" alt="sunny">
+                          <h5 class="card-title" id="aftertom_max_temp">35.7 <sup>o</sup>c</h5>
+                          <p class="card-title" id="aftertom_min_temp">32.2 <sup>o</sup>c</p>
+                          <p class="fs-6 text-primary-emphasis" id="aftertom_text">sunny</p>
+                        
+                      </div>
+                  </div>
+                    
+                        
+                    </div>
+                      
+                   </div>
+                </div>
+            </div>
+            
+        <!--footer-->
+        <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="box col-md-8">
+                    <form action="#" class="form2">
+                        <input type="text" placeholder="Enter your email to subscribe....">
+                        <input type="submit" value="subscribe">
+                    </form>
+
+                    
+                </div>
+                <div class="col-md-3  mt-4 col-md-offset-1">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-google"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footp text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+        </div>
+        </div>
+        
+
+
+
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+    </body>
+</html>   
