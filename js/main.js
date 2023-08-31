@@ -19,11 +19,11 @@ let nextConditionImg = document.getElementsByClassName("tomorrow_icon")
 let nextConditionText = document.getElementsByClassName("tom_text")
 
 //after tomorrow data
-let afternextDay = document.getElementsByClassName("aftertomorrow")
-let afternextMaxTemp = document.getElementsByClassName("aftertom_max_temp")
-let afternextMinTemp = document.getElementsByClassName("aftertom_min_temp")
-let afternextConditionImg = document.getElementsByClassName("aftertomorrow_icon")
-let afternextConditionText = document.getElementsByClassName("aftertom_text")
+let afterNextDay = document.getElementsByClassName("aftertomorrow")
+let afterNextMaxTemp = document.getElementsByClassName("aftertom_max_temp")
+let afterNextMinTemp = document.getElementsByClassName("aftertom_min_temp")
+let afterNextConditionImg = document.getElementsByClassName("aftertomorrow_icon")
+let afterNextConditionText = document.getElementsByClassName("aftertom_text")
 
 let searchInput = document.getElementById("search")
 
@@ -38,7 +38,7 @@ searchInput.addEventListener("input", function() {
 
 /******  Fetching Data ******/
 async function getWeatherInfo(cityName) {
-    let weatherResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=3006364a437149c4b67131132232308&days=3&q=${cityName}`)
+    let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3006364a437149c4b67131132232308&days=3&q=${cityName}`)
     let weatherData = await weatherResponse.json()
     bindDataInsideHtml(weatherData)
 }
